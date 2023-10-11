@@ -1,0 +1,35 @@
+.skip a{
+    position:absolute;
+    top: -40px;
+    z-index: 1000;
+  }
+
+.skip a:focus {
+    position:absolute;
+    top: 20px;
+  }
+
+
+  /* Apply a grid layout to the main content */
+#main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Adjust the gap between items */
+    padding: 20px; /* Add some spacing around the grid */
+  }
+  
+  /* Style the individual image containers */
+  div h2 {
+    font-size: 18px; /* Customize the title font size */
+    margin: 10px 0; /* Add some spacing above and below the title */
+  }
+  
+  div img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below images */
+  }
+  
+  /* Customize other styles as needed */
+  
+  
