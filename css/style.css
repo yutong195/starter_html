@@ -1,0 +1,140 @@
+body{
+  background-color: rgb(204, 238, 250);
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+h2{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-align: center;
+}
+
+h3{
+  font-size: 1.3em;
+}
+
+
+.initial_image {
+  width: 40%; /* Set the width to 100% to make them the same width as their parent */
+  height: 40%; /* Maintain the original aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+#luck_dog{
+  width: 25%; /* Set the width to 100% to make them the same width as their parent */
+  height: auto; /* Maintain the original aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+p{
+  line-height: 1.5;
+}
+
+div {
+  border: 1px solid #ccc; /* Add a 1px solid border with a light gray color */
+  padding: 20px; /* Add padding to create space around the content */
+  margin-bottom: 20px; /* Add margin at the bottom of each section to separate them */
+  box-shadow: 3px 3px 5px #888888; /* Add a subtle box shadow for depth */
+  background-color: #f9f9f9; /* Set the background color to a light gray */
+}
+
+
+.skip a{
+    position:absolute;
+    top: -40px;
+    z-index: 1000;
+    right:0;
+    font-size: 1.5em;
+    border: none;
+  }
+
+.skip a:focus {
+    position:absolute;
+    top: 20px;
+    border: none;
+  }
+
+
+.active a{
+  text-decoration: underline;
+  background-color: yellow;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+li a{
+  font-size: 1.5em;
+}
+
+
+  /* Apply a grid layout to the main content */
+#main {
+    display: grid;
+    grid-template-columns: 1fr; /* Three equal columns */
+    justify-items: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* gap: 20px; Adjust the gap between items */
+    /* padding: 20px; Add some spacing around the grid */
+
+  }
+  
+/* Style the individual image containers */
+div h2 {
+  font-size: 2em; /* Customize the title font size */
+  margin: 10px 0; /* Add some spacing above and below the title */
+}
+
+/* Add styling for the image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create a 2x2 grid */
+  border: 4px solid rgb(98, 242, 192);
+  gap: 20px; /* Adjust the gap between images */
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+/* Style the individual image containers */
+.image-grid img, .image-grid video {
+  width: 60%; /* Set the width to 100% to fill their grid cells */
+  height: auto; /* Maintain the aspect ratio */
+  border: 2px solid rgb(66, 247, 211); /* Add a 1px solid border with a light gray color */
+  box-shadow: 8px 8px 10px #3a3a3a; /* Add a subtle box shadow for depth */
+}
+
+.image-grid-lucky {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* Adjust the gap as needed */
+  border: 4px solid rgb(98, 242, 192);
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 60%;
+  height: auto;
+  border: 2px solid rgb(66, 247, 211); /* Add a 1px solid border with a light gray color */
+  box-shadow: 8px 8px 10px #3a3a3a; /* Add a subtle box shadow for depth */
+}
+
+.grid-item-large {
+  grid-column: span 2; /* Span two columns */
+}
+
+  
+  /* Customize other styles as needed */
+@media (prefers-reduced-motion: reduce) {
+   .gif {
+    display: none; /* Hide GIFs */
+  }
+}

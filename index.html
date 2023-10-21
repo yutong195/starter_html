@@ -3,33 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Pets</title>
 </head>
 <body>
+    <div class="skip"><a href = "#main">Skip to Main Content</a></div>
     <ul>
-        <li><a href = "index.html">Pets</a></li>
-        <li><a href="travel.html">Travels</a></li>
+        <li class="active"><a href="index.html">Pets</a></li>
+        <li><a href="travel.html">Travel</a></li>
         <li><a href="recipes.html">Recipes</a></li>
     </ul>
     
 
-    <main>
+    <main id="main">
         <div>
             <h2>Little Tangerine the Cat</h2>
-            <img src="images/pets/little_tangerine_1.jpg" width = "400" alt="Little tangerine lying on bed mind wandering">
+            <img src="images/pets/little_tangerine_1.jpg" width = "400" alt="Little tangerine lying on bed mind wandering", class="initial_image">
 
             <p>Little tangerine the cat is a 1 year cat. He was initially a stray cat before adoption. He is super lazy and lies down all the time. Sitting up to him is already cardio. He also enjoys sitting besides the sill and look at the environment outside of the window.</p> 
-            
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
-            <img src="images/pets/little_tangerine_2.jpg" width ="200" alt = "Owner held little tangerine in his arms during commencement">
-            <img src="images/pets/little_tangerine_3.jpg"  width ="200" alt="Little tangerine lying on bed with a charming and oppresive look">
-            <video width="200"  controls>
-                <source src="images/pets/little_tangerine_video.mp4">
-                Your browser does not support the video tag.  This was a video of little tangerine was lying on the ground playing.
-            </video>
-            <img src="images/pets/little_tangerine_4.jpg"  width ="200" alt="Little tangerine sitting on bad in cat loaf">
-
+            <br>
+            <div class="image-grid">
+                <img src="images/pets/little_tangerine_4.jpg" alt="Little tangerine sitting on bed in cat loaf">
+                
+                <img src="images/pets/little_tangerine_3.jpg" alt="Little tangerine lying on bed with a charming and oppressive look">
+                <video controls>
+                    <source src="images/pets/little_tangerine_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag. This was a video of little tangerine was lying on the ground playing.
+                </video>
+                <img src="images/pets/little_tangerine_2.jpg" alt="Owner held little tangerine in his arms during commencement">
+            </div>            
+            <br>
+            <br>
+            <br>
             <h3>Likes</h3>
+            <br>
             <ul>
                 <li>Eating</li>
                 <li>Lying on sofa</li>
@@ -43,19 +54,25 @@
 
         <div>
             <h2>Rice Cake the Dog</h2>
-            <img src="images/pets/rice_cake_1.jpg" width = "400" alt="Brown colored teddy dog lying on the ground">
+            <img src="images/pets/rice_cake_1.jpg" width = "400" alt="Brown colored teddy dog lying on the ground", class="initial_image">
 
             <p>Rice cake is a small Teddy bear dog, doesn't have much interest in anything other than eating meat and going for walks. Whenever it's mealtime, he's always the first one waiting in the dining room. Besides that, he's a bit of a wild child when alone, but when you give him snacks, he quickly calms down and brings us a lot of joy.</p> 
-            
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
-            <img src="images/pets/rice_cake_2.jpg" width ="200" alt = "Brown colored teddy dog lying on bed">
-            <img src="images/pets/rice_cake_3.jpg"  width ="200" alt="Rice cake sit infront of the door waiting for master to come home">
-            <video width="200"  controls>
-                <source src="images/pets/rice_cake_video.mp4">
-                Your browser does not support the video tag. This was a video of rice cake playing with his toys. 
-            </video>
-            <img src="images/pets/rice_cake_4.jpg"  width ="200" alt="Brown labradoodle wearing a pirate costume">
-
+            <br>
+            <div class="image-grid">
+                <img src="images/pets/rice_cake_2.jpg" width ="200" alt = "Brown colored teddy dog lying on bed">
+                <img src="images/pets/rice_cake_3.jpg"  width ="200" alt="Rice cake sit infront of the door waiting for master to come home">
+                <video width="200"  controls>
+                    <source src="images/pets/rice_cake_video.mp4">
+                    Your browser does not support the video tag. This was a video of rice cake playing with his toys. 
+                </video>
+                <img src="images/pets/rice_cake_4.jpg"  width ="200" alt="Brown labradoodle wearing a pirate costume">
+            </div>
+            <br>
+            <br>
+            <br>
             <h3>Likes</h3>
             <ul>
                 <li>Eating meat</li>
@@ -70,15 +87,27 @@
 
         <div>
             <h2>Lucky the Dog</h2>
-            <img src="images/pets/lucky_1.jpg" width = "400" alt="Border Collie looking at the camera">
+            <img src="images/pets/lucky_1.jpg" width = "400" alt="Border Collie looking at the camera" class="initial_image" id="luck_dog">
 
             <p>Lucky, a two-and-a-half-year-old Border Collie, prefers playing with people rather than other dogs. His favorite activity is having his parents hold a laser pointer for him to chase the light dot. Secondly, he enjoys playing basketball with his skilled male owner, where the owner dribbles the ball, and Lucky plays defense. Thirdly, he loves fetching and catching flying discs or anything thrown for him.</p> 
-            
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
-            <img src="images/pets/lucky_2.jpg" width ="200" alt = "Lucky stands besids a small lake">
-            <img src="images/pets/lucky_3.jpg"  width ="200" alt="Lucky smiles when the owner touches her chin">
-            <img src="images/pets/lucky_4.jpg"  width ="200" alt="Lucky is untying the owner's shoelaces">
-
+            <br>
+            <div class="image-grid-lucky">
+                <div class="grid-item">
+                    <img src="images/pets/lucky_2.jpg" alt="Lucky stands beside a small lake">
+                </div>
+                <div class="grid-item">
+                    <img src="images/pets/lucky_3.jpg" alt="Lucky smiles when the owner touches her chin">
+                </div>
+                <div class="grid-item grid-item-large">
+                    <img src="images/pets/lucky_4.jpg" alt="Lucky is untying the owner's shoelaces">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
             <h3>Likes</h3>
             <ul>
                 <li>Playing with Laser pointer</li>
@@ -93,21 +122,28 @@
 
         <div>
             <h2>Zhuqu the Cat</h2>
-            <img src="images/pets/Zhu_qu_1.jpg" width = "400" alt="Zhuqu looking at the camera">
+            <img src="images/pets/Zhu_qu_1.jpg" width = "400" alt="Zhuqu looking at the camera", class="initial_image">
 
             <p>Zhu qu is a cute and lovely 5 months old kitty. His eyebrows have two dots above his eyes, which look a bit like bean sprouts, so he is named "竹取" (Zhúqǔ in Chinese), which translates to "Bamboo Cutter" in English.</p> 
             <p>
                 He comes from a family that couldn't keep cats. After bringing him home, because he had cat ringworm, he often rubbed against his owner. The cat ringworm spread to the owner's face, causing them to lose a patch of eyebrow.
             </p>
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
-            <img src="images/pets/Zhu_qu_2.jpg" width ="200" alt = "Zhuqu is lying on the side on the bed, and the owner is petting his belly.">
-            <img src="images/pets/Zhu_qu_3.jpg"  width ="200" alt="Zhuqu is lying on the bed, exposing his belly.">
-            <video width="200"  controls>
-                <source src="images/pets/Zhu_qu_video.mp4">
-                Your browser does not support the video tag. This was a video of the owner petting Zhuqu's belly. 
-            </video>
-            <img src="images/pets/Zhu_qu_4.jpg"  width ="200" alt="Zhuqu is yawning">
-
+            <br>
+            <div class="image-grid">
+                <img src="images/pets/Zhu_qu_2.jpg" width ="200" alt = "Zhuqu is lying on the side on the bed, and the owner is petting his belly.">
+                <img src="images/pets/Zhu_qu_3.jpg"  width ="200" alt="Zhuqu is lying on the bed, exposing his belly.">
+                <video width="200"  controls>
+                    <source src="images/pets/Zhu_qu_video.mp4">
+                    Your browser does not support the video tag. This was a video of the owner petting Zhuqu's belly. 
+                </video>
+                <img src="images/pets/Zhu_qu_4.jpg"  width ="200" alt="Zhuqu is yawning">
+            </div>
+            <br>
+            <br>
+            <br>
             <h3>Likes</h3>
             <ul>
                 <li>Being petted on the belly</li>
@@ -119,21 +155,27 @@
         <br>
 
         <div>
-            <h2>Pluto the Dog</h2>
-            <img src="images/pets/Rocket_1.jpg" width = "400" alt="Cute, small and yellow pomeranian">
+            <h2>Rocket the Dog</h2>
+            <img src="images/pets/Rocket_1.jpg" width = "400" alt="Cute, small and yellow pomeranian", class="initial_image">
 
             <p>Rocket (also named huihui) is a 6-month pomeranian puppy with big eyes and a small, black cute nose. Rocket is named rocket because he runs so fast and energetic all day without even having some rest. Rocket loves to carry his little toy walking around the house and jumping towards my bed.</p> 
             <p>Rocket is friendly to all human beings. He will be a little shy at first, but will "say it" to you after a few seconds. He is also friendly to dogs, especially the small breed, because the large size dogs are hard for him to smell lol. If you meet rocket, do not hesitate to say hi to him!! He will be super happy the whole day.</p>
-            
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
-            <img src="images/pets/Rocket_4.jpg" width ="200" alt = "Rocket is eating his dinner.">
-            <img src="images/pets/Rocket_2.jpg"  width ="200" alt="Rocket wants to come out of the playpen.">
-            <img src="images/pets/Rocket_3.jpg"  width ="200" alt="Rocket is in his childhood.">
-            <video width="200"  controls>
-                <source src="images/pets/Rocket_video.mp4">
-                Your browser does not support the video tag. Rocket is trying to hunt the kitchen clip.. 
-            </video>
-
+            <br>
+            <div class="image-grid">
+                <img src="images/pets/Rocket_4.jpg" width ="200" alt = "Rocket is eating his dinner.">
+                <img src="images/pets/Rocket_2.jpg"  width ="200" alt="Rocket wants to come out of the playpen.">
+                <img src="images/pets/Rocket_3.jpg"  width ="200" alt="Rocket is in his childhood.">
+                <video width="200"  controls>
+                    <source src="images/pets/Rocket_video.mp4">
+                    Your browser does not support the video tag. Rocket is trying to hunt the kitchen clip.. 
+                </video>
+            </div>
+            <br>
+            <br>
+            <br>
             <h3>Likes</h3>
             <ul>
                 <li>Chewing bones</li>
@@ -148,17 +190,23 @@
 
         <div>
             <h2>Pluto the Dog</h2>
-            <img src="images/pets/Pluto_1.jpg" width = "400" alt="White dog looking up">
+            <img src="images/pets/Pluto_1.jpg" width = "400" alt="White dog looking up", class="initial_image">
 
             <p>Pluto is a five year old rescue dog of an unknown breed. He was found wandering alone and taken to the Valley Humane Society where he found his new family. From a young age, Pluto always had a special personality, he was known for being very very lazy! He spends most of his time staring out the window to keep watch of his house. Do not let the laziness fool you because Pluto defends his family from the mailman and squirrels every single day.</p> 
             <p>Aside from his job as defender of the house, Pluto likes to have fun. His favorite part of the day is his daily walk. Sometimes he even gets to go to the park and meet his neighbors. He also loves his toy duck, and only his toy duck. As a dog, it's in his nature to hunt and so he makes sure to get some practice with his toy duck.</p>
-
+            <br>
+            <br>
             <h3>Photo Gallery</h3>
-            <img src="images/pets/Pluto_5.JPG" width ="200" alt = "Pluto the dog standing up to eat a cookie.">
-            <img src="images/pets/Pluto_3.jpg"  width ="200" alt="Pluto sleeping on bed">
-            <img src="images/pets/Pluto_2.jpg"  width ="200" alt="Pluto the dog on a walking trail.">
-            <img src="images/pets/Pluto_4.jpg"  width ="200" alt="Pluto sitting and posed on top of a table">
-
+            <br>
+            <div class="image-grid">
+                <img src="images/pets/Pluto_5.JPG" width ="200" alt = "Pluto the dog standing up to eat a cookie.">
+                <img src="images/pets/Pluto_3.jpg"  width ="200" alt="Pluto sleeping on bed">
+                <img src="images/pets/Pluto_2.jpg"  width ="200" alt="Pluto the dog on a walking trail.">
+                <img src="images/pets/Pluto_4.jpg"  width ="200" alt="Pluto sitting and posed on top of a table">
+            </div>
+            <br>
+            <br>
+            <br>
             <h3>Likes</h3>
             <ul>
                 <li>Eating his bone</li>
@@ -173,17 +221,23 @@
 
         <div>
             <h2>Cody the Dog</h2>
-            <img src="images/pets/Cody_1.jpg" width = "400" alt="Cody at home">
+            <img src="images/pets/Cody_1.jpg" width = "400" alt="Cody at home", class="initial_image">
 
             <p>Cody is a 7yr old Pembroke Corgi. He was born in Cavalier Farms, Seattle. He prefers to spend his days lounging on the bean bag. Every day, he enjoys two walks around the neighborhood and likes to make friends with other doggie friends. If lucky enough, he might see the cyclist, but he is not allowed to give chase.</p> 
             <p>Cody loves traveling. He enjoys walking on the beach and taking sun naps. But he hates cold weather. He would like to stay at home lounging by the fireplace in winter.</p>
-
+            <br>
             <h3>Photo Gallery</h3>
-            <img src="images/pets/Cody_3.jpg" width ="200" alt = "Cody lying on the ground making faces">
-            <img src="images/pets/Cody_5.jpg"  width ="200" alt="Cody visiting Badwater Basin in Death Valley National Park">
-            <img src="images/pets/Cody_2.jpg"  width ="200" alt="Cody having a walk by the sea">
-            <img src="images/pets/Cody_4.jpg"  width ="200" alt="Cody lounging by the fireplace in winter">
-
+            <br>
+            <br>
+            <div class="image-grid">
+                <img src="images/pets/Cody_3.jpg" width ="200" alt = "Cody lying on the ground making faces">
+                <img src="images/pets/Cody_5.jpg"  width ="200" alt="Cody visiting Badwater Basin in Death Valley National Park">
+                <img src="images/pets/Cody_2.jpg"  width ="200" alt="Cody having a walk by the sea">
+                <img src="images/pets/Cody_4.jpg"  width ="200" alt="Cody lounging by the fireplace in winter">
+            </div>
+            <br>
+            <br>
+            <br>
             <h3>Likes</h3>
             <ul>
                 <li>Travelling</li>
