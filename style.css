@@ -1,0 +1,61 @@
+body{
+  background-color: rgb(204, 238, 250);
+}
+
+.skip a{
+    position:absolute;
+    top: -40px;
+    z-index: 1000;
+    right:0;
+    font-size: 1.5em;
+  }
+
+.skip a:focus {
+    position:absolute;
+    top: 20px;
+  }
+
+
+.active a{
+  text-decoration: underline;
+  background-color: yellow;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+li a{
+  font-size: 1.5em;
+}
+
+
+  /* Apply a grid layout to the main content */
+#main {
+    display: grid;
+    grid-template-columns: 1fr; /* Three equal columns */
+    justify-items: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* gap: 20px; Adjust the gap between items */
+    /* padding: 20px; Add some spacing around the grid */
+
+  }
+  
+/* Style the individual image containers */
+div h2 {
+  font-size: 18px; /* Customize the title font size */
+  margin: 10px 0; /* Add some spacing above and below the title */
+}
+  
+div img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space below images */
+}
+  
+  /* Customize other styles as needed */
+@media (prefers-reduced-motion: reduce) {
+   .gif {
+    display: none; /* Hide GIFs */
+  }
+}
